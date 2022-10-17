@@ -9,12 +9,12 @@ class Servicio extends Model
 {
     /**
      * SERVICIO ATTRIBUTES
-     * $this->attributes['id'] - int - contains the product primary key (id)
-     * $this->attributes['name'] - string - contains the product name
-     * $this->attributes['price'] - int - contains the product price
+     * $this->attributes['id'] - int - contains the service primary key (id)
+     * $this->attributes['name'] - string - contains the service name
+     * $this->attributes['price'] - int - contains the service price
      * $this->attributes['fast'] - boolean - contains the fast value
-     * $this->attributes['created_at'] - timestamp - contains the product creation date
-     * $this->attributes['updated_at'] - timestamp - contains the product update date
+     * $this->attributes['created_at'] - timestamp - contains the service creation date
+     * $this->attributes['updated_at'] - timestamp - contains the service update date
      */
 
     public function getId()
