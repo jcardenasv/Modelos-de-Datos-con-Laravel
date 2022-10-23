@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\ServicioController@index')->name("welcome");
+Route::get('/admin', 'App\Http\Controllers\Admin\AdminHomeController@index')->name("admin.home.index");
+Route::get('/admin/servicios', 'App\Http\Controllers\Admin\AdminServicioController@index')->name("admin.servicio.index");
