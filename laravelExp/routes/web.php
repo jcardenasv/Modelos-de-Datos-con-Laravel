@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HelloWorld;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\ServicioController@index')->name("welcome");
-Route::get('/admin', 'App\Http\Controllers\Admin\AdminHomeController@index')->name("admin.home.index");
-Route::get('/admin/servicios', 'App\Http\Controllers\Admin\AdminServicioController@index')->name("admin.servicio.index");
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/helloworld', 'App\Http\Controllers\HelloWorld@sayHello');
